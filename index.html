@@ -58,6 +58,22 @@
 </head>
 
 <body class="font-inter bg-light text-dark antialiased">
+  <script>
+    if (/Mobile|Android|iPhone/i.test(navigator.userAgent)) {
+    console.log('当前设备是移动设备');
+} else {
+   // 立即跳转
+  window.location.href = "https://www.example.com";
+
+  // 延迟跳转（如3秒后跳转）
+  setTimeout(function() {
+    window.location.href = "https://www.example.com";
+  }, 0); // 3000毫秒 = 3秒
+}
+
+
+
+  </script>
   <!-- 导航栏 -->
   <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300">
     <div class="container mx-auto px-4 py-3 flex justify-between items-center bg-white/80 backdrop-blur-md shadow-sm">
